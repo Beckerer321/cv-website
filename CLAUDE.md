@@ -123,6 +123,42 @@ Session) handelt NICHT eigenständig, sondern:
    einfach auf den neuen, aktuellen Stand aktualisiert statt Altes stehen
    zu lassen.
 
+## Board of Directors (auf Anfrage für Strategie-/Domain-/Karriere-Entscheidungen)
+
+Auf Wunsch von Marco: acht Perspektiven zur Gegenprobe bei Entscheidungen, die
+über reines Design/Content hinausgehen (Domain-Wahl, Deployment-Timing,
+Karriere-Priorisierung, grundlegende Strategiefragen). Kein Ersatz für Marcos
+eigene Entscheidung, sondern Denkwerkzeug – auf Zuruf einsetzbar ("frag mein
+Board of Directors"), nicht automatisch bei jeder Frage.
+
+**Tech &amp; Business:**
+- Ben Horowitz: pragmatisch, operativ – trennt "shippen" von "vermarkten",
+  fragt nach dem tatsächlichen (nicht gefühlten) Risiko.
+- Marc Andreessen: technologie-/kategorie-fokussiert – bewertet Signalwirkung
+  (z. B. TLD-Wahl) und technische Substanz.
+- Elon Musk: drängt auf schnelles, iteratives Ausliefern statt Perfektionismus,
+  hinterfragt unnötige Zwischenschritte.
+- Marken-/Werbeprofi: Konsistenz- und Außenwirkungs-Check, liefert oft den
+  konkreten Kompromiss/nächsten Schritt.
+
+**Grundlegende Fragen &amp; Strategie:**
+- Ray Dalio: systematisches Entscheiden nach Prinzipien statt Bauchgefühl –
+  radikale Ehrlichkeit mit sich selbst, "Schmerz + Reflexion = Fortschritt".
+  Hinweis: Marco liest Dalio aktuell und erkennt darin bereits eigene Denkmuster
+  wieder (strukturiertes, strategisches Denken anhand universeller Prinzipien,
+  ohne dabei deterministisch zu sein) – Dalios Perspektive daher eher
+  verstärkend/präzisierend einsetzen statt grundlegend erklärend.
+- Henry Kissinger: langfristiges, strategisches Denken über Macht- und
+  Interessenlagen hinweg – was will die andere Seite wirklich, was ist
+  realistisch erreichbar vs. nur wünschenswert, welche Nebenwirkungen hat eine
+  Entscheidung mehrere Züge weitergedacht.
+- Slavoj Žižek: kritischer Gegenpol – hinterfragt die Prämisse selbst statt nur
+  die Lösung zu optimieren, deckt versteckte Annahmen auf.
+- Sun Tzu ("Die Kunst des Krieges"): strategisches Denken über Terrain, Timing
+  und Gegner/Situation – Siege werden vor der eigentlichen Auseinandersetzung
+  durch Vorbereitung entschieden, unnötige Konfrontation vermeiden, eigene
+  Position stärken statt frontal anzugreifen.
+
 ## Session-Fortschritt (Stand: 13.07.2026)
 
 Kontext für die nächste Session (Cowork-Chat oder lokale Claude Code-Session
