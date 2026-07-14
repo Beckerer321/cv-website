@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Becker – CV</title>
+    <script>
+        (function () {
+            var stored = localStorage.getItem('cv-theme');
+            var theme = (stored === 'light' || stored === 'dark')
+                ? stored
+                : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+            if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container navbar__inner">
+            <a href="#hero" class="navbar__brand"><span class="navbar__brand-text"><span class="navbar__letter navbar__letter--anchor" style="--i:0">M</span><span class="navbar__letter" style="--i:1">a</span><span class="navbar__letter" style="--i:2">r</span><span class="navbar__letter" style="--i:3">c</span><span class="navbar__letter" style="--i:4">o</span><span class="navbar__letter" style="--i:5">&nbsp;</span><span class="navbar__letter navbar__letter--anchor" style="--i:6">B</span><span class="navbar__letter" style="--i:7">e</span><span class="navbar__letter" style="--i:8">c</span><span class="navbar__letter" style="--i:9">k</span><span class="navbar__letter" style="--i:10">e</span><span class="navbar__letter" style="--i:11">r</span></span></a>
+            <button class="navbar__toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="navbar__nav" id="navMenu">
+                <a href="#about">Über mich</a>
+                <a href="#experience">Berufserfahrung</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projekte</a>
+                <a href="#research">Forschung</a>
+                <a href="#contact">Kontakt</a>
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Theme wechseln (hell/dunkel)">
+                    <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+                    </svg>
+                    <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="hero" class="hero">
+            <div class="hero__network" aria-hidden="true">
+                <svg class="hero__lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <line x1="10" y1="30" x2="4" y2="13" data-from="H1" data-to="S1" data-delay="1.55"></line>
+                    <line x1="10" y1="30" x2="4" y2="48" data-from="H1" data-to="S2" data-delay="1.59"></line>
+                    <line x1="10" y1="30" x2="19" y2="16" data-from="H1" data-to="S3" data-delay="1.63"></line>
+                    <line x1="90" y1="25" x2="81" y2="13" data-from="H2" data-to="S4" data-delay="1.67"></line>
+                    <line x1="90" y1="25" x2="96" y2="43" data-from="H2" data-to="S5" data-delay="1.71"></line>
+                    <line x1="90" y1="25" x2="96" y2="10" data-from="H2" data-to="S6" data-delay="1.75"></line>
+                    <line x1="12" y1="78" x2="5" y2="92" data-from="H3" data-to="S7" data-delay="1.79"></line>
+                    <line x1="12" y1="78" x2="20" y2="88" data-from="H3" data-to="S8" data-delay="1.83"></line>
+                    <line x1="12" y1="78" x2="18" y2="62" data-from="H3" data-to="S9" data-delay="1.87"></line>
+                    <line x1="12" y1="78" x2="2" y2="68" data-from="H3" data-to="S10" data-delay="1.91"></line>
+                    <line x1="88" y1="80" x2="96" y2="92" data-from="H4" data-to="S11" data-delay="1.95"></line>
+                    <line x1="88" y1="80" x2="96" y2="68" data-from="H4" data-to="S12" data-delay="1.99"></line>
+                    <line x1="88" y1="80" x2="80" y2="95" data-from="H4" data-to="S13" data-delay="2.03"></line>
+                    <line x1="90" y1="25" x2="78" y2="40" data-from="H2" data-to="S14" data-delay="2.07"></line>
+                    <line x1="88" y1="80" x2="78" y2="62" data-from="H4" data-to="S15" data-delay="2.11"></line>
+                </svg>
+                <span class="hero__node hero__node--hub" data-node-id="H1" style="--x:10%; --y:30%; --delay:0s" data-delay="0">Procurement-Digitalisierung</span>
+                <span class="hero__node hero__node--hub" data-node-id="H2" style="--x:90%; --y:25%; --delay:0s" data-delay="0">Angewandte KI</span>
+                <span class="hero__node hero__node--hub" data-node-id="H3" style="--x:12%; --y:78%; --delay:0s" data-delay="0">Product Ownership</span>
+                <span class="hero__node hero__node--hub" data-node-id="H4" style="--x:88%; --y:80%; --delay:0s" data-delay="0">Change &amp; AI-Adoption</span>
+                <span class="hero__node" data-node-id="S1" style="--x:4%; --y:13%; --delay:0.75s" data-delay="0.75">Guided Procurement</span>
+                <span class="hero__node" data-node-id="S2" style="--x:4%; --y:48%; --delay:0.79s" data-delay="0.79">Systemlandschaft</span>
+                <span class="hero__node" data-node-id="S3" style="--x:19%; --y:16%; --delay:0.83s" data-delay="0.83">GAEB-Ausschreibungstool</span>
+                <span class="hero__node" data-node-id="S4" style="--x:81%; --y:13%; --delay:0.87s" data-delay="0.87">Prompt Engineering</span>
+                <span class="hero__node" data-node-id="S5" style="--x:96%; --y:43%; --delay:0.91s" data-delay="0.91">KI-Vertragsanalyse</span>
+                <span class="hero__node" data-node-id="S6" style="--x:96%; --y:10%; --delay:0.95s" data-delay="0.95">Chatbot-Engineering</span>
+                <span class="hero__node" data-node-id="S7" style="--x:5%; --y:92%; --delay:0.99s" data-delay="0.99">IT-Projektleitung</span>
+                <span class="hero__node" data-node-id="S8" style="--x:20%; --y:88%; --delay:1.03s" data-delay="1.03">Stakeholder-Management</span>
+                <span class="hero__node" data-node-id="S9" style="--x:18%; --y:62%; --delay:1.07s" data-delay="1.07">Reporting &amp; Power BI</span>
+                <span class="hero__node" data-node-id="S10" style="--x:2%; --y:68%; --delay:1.11s" data-delay="1.11">GenAI-Chatbots</span>
+                <span class="hero__node" data-node-id="S11" style="--x:96%; --y:92%; --delay:1.15s" data-delay="1.15">AI Champion</span>
+                <span class="hero__node" data-node-id="S12" style="--x:96%; --y:68%; --delay:1.19s" data-delay="1.19">Copilot-Rollout</span>
+                <span class="hero__node" data-node-id="S13" style="--x:80%; --y:95%; --delay:1.23s" data-delay="1.23">KI-Roundtable</span>
+                <span class="hero__node" data-node-id="S14" style="--x:78%; --y:40%; --delay:1.27s" data-delay="1.27">SLM-Konzept</span>
+                <span class="hero__node" data-node-id="S15" style="--x:78%; --y:62%; --delay:1.31s" data-delay="1.31">Community of Practice</span>
+            </div>
+            <div class="container hero__inner">
+                <p class="hero__eyebrow">Hallo, ich bin</p>
+                <h1 class="hero__name">Marco Becker</h1>
+                <p class="hero__tagline">Product Owner &amp; Application Manager – ich verbinde Procurement-Digitalisierung mit angewandter KI.</p>
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">Projekte ansehen</a>
+                    <a href="#contact" class="btn btn--ghost">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section__title">Über mich</h2>
+                <p class="section__lead">
+                    Ich bin Product Owner &amp; Application Manager mit Fokus auf Procurement-Digitalisierung
+                    und angewandte KI. Bei der DZ BANK verantworte ich die Systemlandschaft im Einkauf, betreibe
+                    einen GenAI-Chatbot eigenverantwortlich in Produktion und treibe als AI Champion die
+                    Copilot-Einführung voran. Davor habe ich als IT-Projektleiter ein Millionenprojekt zur
+                    App-Qualität geführt und mich in Forschungsprojekten mit E-Government, Usability und
+                    Digitalisierung beschäftigt. Mich begeistert, wie KI und gut gestaltete Prozesse
+                    Organisationen wirklich voranbringen.
+                </p>
+            </div>
+        </section>
+
+        <section id="experience" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Berufserfahrung</h2>
+                <ol class="timeline">
+                    <li class="timeline__item timeline__item--current">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">seit 04/2025 <span class="timeline__badge">Aktuell</span></span>
+                            <h3 class="timeline__role">Product Owner &amp; Application Manager | Procurement-Digitalisierung</h3>
+                            <p class="timeline__company">DZ BANK AG</p>
+                            <ul class="timeline__bullets">
+                                <li>Verantworte die Procurement-Systemlandschaft der DZ BANK</li>
+                                <li>Leite operativ ein Ausschreibungstool für das Facility Management (GAEB-Format) – von Anforderungsaufnahme über Nutzerverwaltung bis zum Admin-Betrieb</li>
+                                <li>Betreibe und entwickle eigenverantwortlich einen GenAI-Chatbot in Produktion weiter, inkl. Modellauswahl, System-Prompt- und Wissensbasis-Pflege</li>
+                                <li>Verantworte das Reporting für die neuen Einkaufssysteme</li>
+                                <li>Wirke an Ablösung und Rollout der neuen Systemlandschaft mit, u.&nbsp;a. Bewertung von Guided Procurement und KI-gestützter Vertragsanalyse</li>
+                                <li>Aktiv im AI-Champions-Netzwerk: begleite als Change Agent die Copilot-Einführung, schule Kolleg:innen im KI-Roundtable und treibe die AI-Adoption voran</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">07/2023 – 04/2025</span>
+                            <h3 class="timeline__role">IT-Project Manager | Innovation Management</h3>
+                            <p class="timeline__company">Rhein-Main-Verkehrsverbund Servicegesellschaft mbH</p>
+                            <p class="timeline__desc">
+                                Verantwortete ein 3-Mio.-Euro-Projekt zur Qualitätssteigerung der RMVgo-App und
+                                hob die App-Bewertung von 1,5 auf fast 4 Sterne – für über 1 Million Nutzer:innen.
+                                Übernahm IT-Beratung, Test- und Incident-Management sowie Stakeholder-Koordination.
+                                Leitete parallel die interne Community of Practice für KI, brachte Impulse zur
+                                KI-Strategie und Matrixorganisation ein und konzipierte ein Kategoriesystem sowie
+                                das Finetuning eines Small Language Models, um App-Bewertungen und Kommentare
+                                automatisiert auszuwerten und über ein Live-Dashboard in den Entwicklungsprozess
+                                zu spiegeln.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">01/2023 – 07/2023</span>
+                            <h3 class="timeline__role">IT-Consultant | Innovation and Digitalization</h3>
+                            <p class="timeline__company">Rhein-Main-Verkehrsverbund Servicegesellschaft mbH</p>
+                            <p class="timeline__desc">
+                                Unterstützte das Incident-Management, optimierte Fehlerbehebungsprozesse und
+                                begleitete die Testphasen der App. Sammelte und integrierte Kundenfeedback zur
+                                Verbesserung der Nutzererfahrung.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">11/2021 – 01/2023</span>
+                            <h3 class="timeline__role">Project Management Officer</h3>
+                            <p class="timeline__company">AML RightSource</p>
+                            <p class="timeline__desc">
+                                PMO in einem Multi-Millionen-Euro-Projekt für die Deutsche Bank (KYC/AFC).
+                                Unterstützte über 100 Analyst:innen in Kommunikation, Risikomanagement und IT-Beratung.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">04/2018 – 11/2021</span>
+                            <h3 class="timeline__role">Wissenschaftlicher Mitarbeiter</h3>
+                            <p class="timeline__company">Universität Siegen</p>
+                            <p class="timeline__desc">
+                                Forschte in den Projekten „Creactive Citizen" und „CareComLabs" zu E-Government,
+                                Usability und IT für die alternde Gesellschaft – inklusive Prototyping und
+                                Prozessmodellierung.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="education-list">
+                    <h3 class="education-list__title">Ausbildung</h3>
+                    <div class="education-item">
+                        <p class="education-item__degree">M.A. Media and Society (Sozialwissenschaften &amp; Sozialinformatik)</p>
+                        <p class="education-item__meta">Universität Siegen · 04/2019 – 10/2021</p>
+                    </div>
+                    <div class="education-item">
+                        <p class="education-item__degree">B.A. Social Sciences &amp; Media Studies</p>
+                        <p class="education-item__meta">Universität Siegen · 10/2012 – 03/2019</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section__title">Skills</h2>
+
+                <div class="skills__group">
+                    <h3 class="skills__category">AI &amp; GenAI</h3>
+                    <ul class="tag-list">
+                        <li class="tag">GenAI-Chatbots (Betrieb &amp; Weiterentwicklung)</li>
+                        <li class="tag">Prompt Engineering</li>
+                        <li class="tag">Microsoft Copilot</li>
+                        <li class="tag">Guided Procurement (AI)</li>
+                        <li class="tag">KI-gestützte Vertragsanalyse</li>
+                        <li class="tag">SLM-Finetuning (Konzept)</li>
+                        <li class="tag">AI Champion / Change Management</li>
+                        <li class="tag">KI-Strategie &amp; Community of Practice</li>
+                    </ul>
+                </div>
+
+                <div class="skills__group">
+                    <h3 class="skills__category">Procurement-Digitalisierung</h3>
+                    <ul class="tag-list">
+                        <li class="tag">Procurement-Systemlandschaft</li>
+                        <li class="tag">Source-to-Pay</li>
+                        <li class="tag">Ausschreibungsmanagement (FM, GAEB-Format)</li>
+                        <li class="tag">Reporting &amp; Analytics</li>
+                        <li class="tag">Systemablösung &amp; Rollout</li>
+                    </ul>
+                </div>
+
+                <div class="skills__group">
+                    <h3 class="skills__category">Tools &amp; Tech</h3>
+                    <ul class="tag-list">
+                        <li class="tag">Power BI</li>
+                        <li class="tag">Jira</li>
+                        <li class="tag">MS 365</li>
+                        <li class="tag">Python</li>
+                        <li class="tag">PSPO I</li>
+                        <li class="tag">Adobe Creative Suite</li>
+                    </ul>
+                </div>
+
+                <div class="skills__group">
+                    <h3 class="skills__category">Arbeitsweise</h3>
+                    <ul class="tag-list">
+                        <li class="tag">Kommunikationsstärke</li>
+                        <li class="tag">Verlässlichkeit</li>
+                        <li class="tag">Teamgeist</li>
+                        <li class="tag">Resilienz</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Projekte</h2>
+                <div class="projects-showcase">
+                <div class="projects-showcase__camera">
+                <div class="projects-showcase__inner">
+                <div class="projects__grid">
+                    <article class="card card--highlight projects-reveal">
+                        <span class="card__badge">Highlight</span>
+                        <h3 class="card__title">RMVgo App – Qualitätsoffensive</h3>
+                        <p class="card__desc">
+                            Ich habe ein 3-Mio.-Euro-Projekt zur Qualitätsverbesserung der RMVgo-App geleitet
+                            und die App-Bewertung von 1,5 auf fast 4 Sterne gehoben – für über 1 Million
+                            Nutzer:innen. Verantwortet habe ich IT-Beratung, Test- und Incident-Management
+                            sowie die Stakeholder-Koordination. Zusätzlich konzipierte ich ein Kategoriesystem
+                            und das Finetuning eines Small Language Models, um App-Bewertungen automatisiert
+                            auszuwerten und über ein Live-Dashboard in die Weiterentwicklung einfließen zu lassen.
+                        </p>
+                        <div class="project-network">
+                            <svg class="project-network__lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <line x1="50" y1="50" x2="18" y2="25"></line>
+                                <line x1="50" y1="50" x2="82" y2="25"></line>
+                                <line x1="50" y1="50" x2="18" y2="75"></line>
+                                <line x1="50" y1="50" x2="82" y2="75"></line>
+                            </svg>
+                            <div class="project-network__hub" style="--x:50%; --y:50%" aria-hidden="true">
+                                <span>📱</span>
+                            </div>
+                            <figure class="project-network__tile" style="--x:18%; --y:25%">
+                                <img src="rmvgo/rmvgo_startscreen.png" alt="RMVgo App – Startbildschirm mit Übersicht" loading="lazy">
+                                <figcaption>App-Übersicht</figcaption>
+                            </figure>
+                            <figure class="project-network__tile" style="--x:82%; --y:25%">
+                                <img src="rmvgo/rmvgo_abfahrten_ffm.png" alt="RMVgo App – Live-Abfahrten in Frankfurt" loading="lazy">
+                                <figcaption>Live-Abfahrten</figcaption>
+                            </figure>
+                            <figure class="project-network__tile" style="--x:18%; --y:75%">
+                                <img src="rmvgo/rmvgo_ticket.png" alt="RMVgo App – Ticket-Kauf im Checkout" loading="lazy">
+                                <figcaption>Ticket-Kauf</figcaption>
+                            </figure>
+                            <figure class="project-network__tile" style="--x:82%; --y:75%">
+                                <img src="rmvgo/appstore_rmvgo.png" alt="RMVgo App – Eintrag im App Store mit 3,9-Sterne-Bewertung" loading="lazy">
+                                <figcaption>App Store · 3,9★</figcaption>
+                            </figure>
+                        </div>
+                    </article>
+                    <article class="card card--highlight projects-reveal">
+                        <span class="card__badge">Highlight</span>
+                        <h3 class="card__title">GenAI-Chatbot – DZ BANK</h3>
+                        <p class="card__desc">
+                            Bei der DZ BANK betreibe ich eigenverantwortlich einen GenAI-Chatbot in Produktion
+                            und entwickle ihn kontinuierlich weiter. Als AI Champion begleite ich zusätzlich
+                            die Copilot-Einführung und fördere den KI-Adoptionsprozess im Fachbereich.
+                        </p>
+                        <div class="project-flow">
+                            <div class="project-flow__row">
+                                <span class="project-flow__node">Datenquellen</span>
+                                <i class="project-flow__arrow" aria-hidden="true"></i>
+                                <span class="project-flow__node">Daten Gateway</span>
+                                <i class="project-flow__arrow" aria-hidden="true"></i>
+                                <span class="project-flow__node">Orchestrierung</span>
+                                <i class="project-flow__arrow" aria-hidden="true"></i>
+                                <span class="project-flow__node">Modell Zoo</span>
+                                <i class="project-flow__arrow" aria-hidden="true"></i>
+                                <span class="project-flow__node">Zugriffsschicht</span>
+                            </div>
+                            <p class="project-flow__source">
+                                Plattform-Architektur vgl. Breiter et al. 2025, HMD Praxis der Wirtschaftsinformatik ·
+                                <a href="https://doi.org/10.1365/s40702-025-01166-8" target="_blank" rel="noopener noreferrer">DOI: 10.1365/s40702-025-01166-8 ↗</a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="walkthrough-project projects-reveal">
+                    <span class="card__badge">Highlight</span>
+                    <h3 class="card__title">European Dashboard – Guided Walkthrough</h3>
+                    <p class="card__desc">
+                        Im Rahmen meiner Masterthesis an der Universität Siegen habe ich ein interaktives
+                        Dashboard zur Analyse politischer Online-Kommunikation entwickelt – klickbarer Prototyp
+                        mit Beispieldaten (Adobe XD, Masterthesis Universität Siegen). Der folgende Walkthrough
+                        führt automatisch durch die zentralen Screens.
+                    </p>
+
+                    <div class="wt" id="wt">
+                        <div class="wt__mockup">
+                            <div class="wt__bar">
+                                <span class="wt__dot wt__dot--red"></span>
+                                <span class="wt__dot wt__dot--yellow"></span>
+                                <span class="wt__dot wt__dot--green"></span>
+                                <span class="wt__url">european-dashboard.eu</span>
+                            </div>
+                            <div class="wt__viewport" id="wtViewport">
+                                <div class="wt__screen">
+                                    <div class="wt__scroller">
+                                        <img src="eu_dashboard/screen-01-overview.png" alt="Screen: Überblick" draggable="false">
+                                    </div>
+                                </div>
+                                <div class="wt__screen">
+                                    <div class="wt__scroller">
+                                        <img src="eu_dashboard/screen-02-twitter.png" alt="Screen: Twitter" draggable="false">
+                                    </div>
+                                </div>
+                                <div class="wt__screen">
+                                    <div class="wt__scroller">
+                                        <img src="eu_dashboard/screen-03-facebook.png" alt="Screen: Facebook" draggable="false">
+                                    </div>
+                                </div>
+                                <div class="wt__screen">
+                                    <div class="wt__scroller">
+                                        <img src="eu_dashboard/screen-04-onlinemedien.png" alt="Screen: Onlinemedien" draggable="false">
+                                    </div>
+                                </div>
+                                <div class="wt__screen">
+                                    <div class="wt__scroller">
+                                        <img src="eu_dashboard/screen-05-datenzugang.png" alt="Screen: Daten" draggable="false">
+                                    </div>
+                                </div>
+                                <div class="wt__screen">
+                                    <div class="wt__scroller">
+                                        <img src="eu_dashboard/screen-06-kalender.png" alt="Screen: Kalender" draggable="false">
+                                    </div>
+                                </div>
+                                <div class="wt__screen">
+                                    <div class="wt__scroller">
+                                        <img src="eu_dashboard/screen-07-methodik.png" alt="Screen: Methodik" draggable="false">
+                                    </div>
+                                </div>
+                                <div class="wt__screen">
+                                    <button class="wt__finale" id="wtFinale" type="button" aria-label="Wordcloud-Video abspielen">
+                                        <img src="eu_dashboard/wordcloud-poster.jpg" alt="Standbild der Wordcloud-Animation" draggable="false">
+                                        <span class="wt__play-icon" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+
+                                <div class="wt__cursor" id="wtCursor" aria-hidden="true"></div>
+                            </div>
+                        </div>
+
+                        <div class="wt__controls">
+                            <button class="wt__playpause" id="wtPlayPause" type="button" aria-label="Walkthrough pausieren">
+                                <span aria-hidden="true">⏸</span>
+                            </button>
+                            <ol class="wt__progress" id="wtProgress">
+                                <li><button type="button" class="wt__step"><span class="wt__step-num">01</span><span class="wt__step-label">Überblick</span></button></li>
+                                <li><button type="button" class="wt__step"><span class="wt__step-num">02</span><span class="wt__step-label">Twitter</span></button></li>
+                                <li><button type="button" class="wt__step"><span class="wt__step-num">03</span><span class="wt__step-label">Facebook</span></button></li>
+                                <li><button type="button" class="wt__step"><span class="wt__step-num">04</span><span class="wt__step-label">Onlinemedien</span></button></li>
+                                <li><button type="button" class="wt__step"><span class="wt__step-num">05</span><span class="wt__step-label">Daten</span></button></li>
+                                <li><button type="button" class="wt__step"><span class="wt__step-num">06</span><span class="wt__step-label">Kalender</span></button></li>
+                                <li><button type="button" class="wt__step"><span class="wt__step-num">07</span><span class="wt__step-label">Methodik</span></button></li>
+                                <li><button type="button" class="wt__step"><span class="wt__step-num">▶</span><span class="wt__step-label">Wordcloud</span></button></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="wt-lightbox" id="wtLightbox" hidden>
+            <div class="wt-lightbox__backdrop" id="wtLightboxBackdrop"></div>
+            <div class="wt-lightbox__panel">
+                <button class="wt-lightbox__close" id="wtLightboxClose" type="button" aria-label="Video schließen">✕</button>
+                <video class="wt-lightbox__video" id="wtLightboxVideo" src="eu_dashboard/wordcloud.mp4" muted loop playsinline preload="none"></video>
+            </div>
+        </div>
+
+        <section id="research" class="section">
+            <div class="container">
+                <h2 class="section__title">Forschung &amp; Mitwirkung</h2>
+                <p class="section__lead">
+                    Als studentischer Mitarbeiter der Universität Siegen habe ich an Forschungsprojekten zu
+                    E-Government, Bürgerbeteiligung und digitaler Stadtentwicklung mitgewirkt – u.&nbsp;a. im
+                    Projekt „Creactive Citizen", gefördert durch den EFRE. Meine Mitarbeit wird in folgenden
+                    Publikationen namentlich verdankt:
+                </p>
+                <ul class="publication-list">
+                    <li class="publication-item">
+                        <p class="publication-item__meta">Saßmannshausen, Radtke, Bohn, Hussein, Randall &amp; Pipek · 2021</p>
+                        <p class="publication-item__title">„Citizen-Centered Design in Urban Planning: How Augmented Reality can be used in Citizen Participation Processes"</p>
+                        <p class="publication-item__venue">
+                            Designing Interactive Systems Conference (DIS '21), ACM ·
+                            <a href="https://doi.org/10.1145/3461778.3462130" target="_blank" rel="noopener noreferrer">DOI: 10.1145/3461778.3462130 ↗</a>
+                        </p>
+                    </li>
+                    <li class="publication-item">
+                        <p class="publication-item__meta">Radtke &amp; Saßmannshausen · 2020</p>
+                        <p class="publication-item__title">„Auf dem Weg zur responsiven Demokratie? Online-Öffentlichkeitsbeteiligung in der Stadtentwicklung"</p>
+                        <p class="publication-item__venue">
+                            Zeitschrift für Politikwissenschaft, Springer ·
+                            <a href="https://doi.org/10.1007/s41358-020-00233-4" target="_blank" rel="noopener noreferrer">DOI: 10.1007/s41358-020-00233-4 ↗</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Kontakt</h2>
+                <p class="section__lead">
+                    Interesse an einem Austausch oder einer Zusammenarbeit? Ich freue mich über eine Nachricht.
+                </p>
+                <ul class="contact-list">
+                    <li><span class="contact-list__label">E-Mail:</span> <a href="mailto:marco.becker.992@gmail.com">marco.becker.992@gmail.com</a></li>
+                    <li><span class="contact-list__label">LinkedIn:</span> <a href="#">linkedin.com/in/marco-becker</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Marco Becker</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell.exe -Command '& \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\" --headless=new --disable-gpu --no-sandbox --virtual-time-budget=6000 --enable-logging=stderr --v=1 \"http://localhost:8790/index.html\" 2>&1')",
+      "Bash(powershell.exe -Command '& \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\" --headless --disable-gpu --no-sandbox --window-size=390,900 --virtual-time-budget=3000 --enable-logging=stderr --v=1 \"http://localhost:8790/index.html\" 2>&1')",
+      "Bash(powershell.exe -Command \"& 'C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' --headless=new --disable-gpu --no-sandbox --window-size=406,900 --virtual-time-budget=2000 --dump-dom 'http://localhost:8790/index.html'\")",
+      "Bash(powershell.exe -Command 'Get-CimInstance Win32_Process -Filter \"Name='\\\\''python.exe'\\\\''\" | Where-Object { $_.CommandLine -like '\\\\''*8790*'\\\\'' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force }')",
+      "Bash(\"/e/Programmieren/Anaconda/python\" -c \"import PIL; print\\('Pillow', PIL.__version__\\)\")",
+      "Bash(powershell.exe -Command \"Get-Command magick -ErrorAction SilentlyContinue; Get-Command convert -ErrorAction SilentlyContinue\")",
+      "Bash(/e/Programmieren/Anaconda/python -c ' *)",
+      "Bash(\"/e/Programmieren/Anaconda/python\" \"C:\\\\Users\\\\margo\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-margo-Documents-VSCODE-cv-website\\\\8894eb25-6467-475f-a142-9276a8caa6f3\\\\scratchpad\\\\compress_images.py\")"
+    ]
+  }
+}
