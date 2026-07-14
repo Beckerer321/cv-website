@@ -2,6 +2,9 @@ Becker_CV_26.pdf
 *.xd
 eu_dashboard/Wordcloud_European_Dashboard.gif
 Gen_AI/id-5147.pdf
-.claude/settings.local.json
+.claude/
 CLAUDE.md
 SESSION-LOG.md
+rmvgo/rmvgo_bikesharing.png
+rmvgo/rmvgo_abfahrten_ffm_2.png
+rmvgo/rmvgo_verbindung.png
