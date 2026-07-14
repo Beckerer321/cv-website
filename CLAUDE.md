@@ -4,6 +4,41 @@ Dies ist eine persönliche CV-/Portfolio-Website von Marco Becker. Nur statische
 
 Niemals private Kontaktdaten (Adresse, Telefon, Geburtsdatum, Familienstand) oder Daten Dritter (Namen von Kolleg:innen, Kund:innen, internen Projekten/Firmen) auf die Website übernehmen. Im Zweifelsfall: nachfragen statt übernehmen. Das gilt auch für Screenshots, PDFs und Bild-Assets, nicht nur für Text.
 
+## Arbeitsweise & Entscheidungshoheit (höchste Priorität – gilt für Cowork und lokale Claude Code-Sessions gleichermaßen)
+
+Marco hat die Entscheidungshoheit über alle inhaltlichen/gestalterischen
+Änderungen an diesem Projekt. Claude (egal ob Cowork-Chat oder lokale
+Session) handelt NICHT eigenständig, sondern:
+1. Spiegelt vor jeder Umsetzung explizit zurück, was verstanden wurde
+   (Problem, gewünschtes Verhalten, geplante konkrete Schritte).
+2. Wartet auf ein ausdrückliches Go von Marco, bevor Dateien geändert werden
+   – auch wenn eine Lösung naheliegend oder "offensichtlich richtig"
+   erscheint. Eigene Zusatz-Änderungen (auch vermeintliche Aufräumarbeiten/
+   Bugfixes) ohne Rückfrage sind nicht erwünscht.
+3. Lesen/Prüfen von Dateien zur Diagnose ist jederzeit erlaubt (verändert
+   nichts) – nur das Schreiben/Editieren braucht das Go.
+4. Nach dem Go: Umsetzung, danach kurze Bestätigung was genau geändert wurde.
+4b. Ausnahme für reine technische Bugfixes: Wenn eine bereits abgesegnete
+   Funktion (Design/Inhalt ist längst entschieden) schlicht nicht korrekt
+   funktioniert – z. B. ein Rendering-Bug, ein Browser-Kompatibilitätsproblem,
+   ein Tippfehler im Code – und die Korrektur KEINE neue Design-/Inhalts-
+   Entscheidung trifft, sondern nur die bereits vereinbarte Funktion korrekt
+   zum Laufen bringt, darf Claude das direkt umsetzen, ohne vorher erneut
+   nach einem Go zu fragen. Sobald eine Änderung auch nur teilweise eine
+   gestalterische oder inhaltliche Entscheidung berührt (Layout, Wortwahl,
+   welche Inhalte wo erscheinen, Animationsverhalten das nicht 1:1 bereits
+   spezifiziert war), gilt wieder Punkt 1–4 (erst zurückspiegeln, dann Go
+   abwarten). Im Zweifel: lieber einmal zu viel fragen als eigenmächtig
+   etwas gestalterisch verändern.
+5. Der Abschnitt "Session-Fortschritt" weiter unten ist reines Protokoll
+   (Status-Snapshot für Kontext-Kontinuität zwischen Sessions) – KEINE
+   Freigabe-Instanz und KEIN Grund, eine bereits im Chat getroffene
+   Entscheidung erneut mit Pro/Contra zu hinterfragen. Ein im Chat
+   ausdrücklich erteiltes Go ist bindend, auch wenn ein Punkt dort zuvor als
+   "fertig" markiert war. Nach jeder Umsetzung wird der Status-Abschnitt
+   einfach auf den neuen, aktuellen Stand aktualisiert statt Altes stehen
+   zu lassen.
+
 ## Tech- und Design-Konventionen
 
 - Kein Framework, kein Build-Tool, keine externen Libraries ohne Rückfrage. Aktuell werden ausschließlich System-Fonts genutzt (kein Google Fonts o.ä.) – das bitte beibehalten, solange nicht anders besprochen.
@@ -30,6 +65,10 @@ zeitlos, premium, unaufdringlich, clean, elegant.
   statt gleichzeitigem Erscheinen – wirkt organischer und hochwertiger.
 
 ### Testfragen (vor jeder Design-Entscheidung gegenprüfen)
+
+Dieses Quartett ist die immer aktive, design-spezifische Teilmenge des
+größeren "Board of Directors" weiter unten – gilt automatisch bei jeder
+Design-Entscheidung, unabhängig davon ob das größere Gremium angefragt wird.
 
 - **Dieter Rams** ("Weniger, aber besser"): Würde das in 5 Jahren noch aktuell
   aussehen, oder ist es ein kurzlebiger Trend?
@@ -87,49 +126,26 @@ bis Marco sie ausdrücklich ändert.
    jetzt wirklich fertig?"-Hinterfragen durch Claude ist nicht erwünscht.
 5. Sobald live: URL aktiv in LinkedIn-Profil, Bewerbungen und Gesprächen
    einsetzen – das ist der eigentliche Hebel, nicht weitere Website-Politur.
-
-## Arbeitsweise & Entscheidungshoheit (höchste Priorität – gilt für Cowork und lokale Claude Code-Sessions gleichermaßen)
-
-Marco hat die Entscheidungshoheit über alle inhaltlichen/gestalterischen
-Änderungen an diesem Projekt. Claude (egal ob Cowork-Chat oder lokale
-Session) handelt NICHT eigenständig, sondern:
-1. Spiegelt vor jeder Umsetzung explizit zurück, was verstanden wurde
-   (Problem, gewünschtes Verhalten, geplante konkrete Schritte).
-2. Wartet auf ein ausdrückliches Go von Marco, bevor Dateien geändert werden
-   – auch wenn eine Lösung naheliegend oder "offensichtlich richtig"
-   erscheint. Eigene Zusatz-Änderungen (auch vermeintliche Aufräumarbeiten/
-   Bugfixes) ohne Rückfrage sind nicht erwünscht.
-3. Lesen/Prüfen von Dateien zur Diagnose ist jederzeit erlaubt (verändert
-   nichts) – nur das Schreiben/Editieren braucht das Go.
-4. Nach dem Go: Umsetzung, danach kurze Bestätigung was genau geändert wurde.
-4b. Ausnahme für reine technische Bugfixes: Wenn eine bereits abgesegnete
-   Funktion (Design/Inhalt ist längst entschieden) schlicht nicht korrekt
-   funktioniert – z. B. ein Rendering-Bug, ein Browser-Kompatibilitätsproblem,
-   ein Tippfehler im Code – und die Korrektur KEINE neue Design-/Inhalts-
-   Entscheidung trifft, sondern nur die bereits vereinbarte Funktion korrekt
-   zum Laufen bringt, darf Claude das direkt umsetzen, ohne vorher erneut
-   nach einem Go zu fragen. Sobald eine Änderung auch nur teilweise eine
-   gestalterische oder inhaltliche Entscheidung berührt (Layout, Wortwahl,
-   welche Inhalte wo erscheinen, Animationsverhalten das nicht 1:1 bereits
-   spezifiziert war), gilt wieder Punkt 1–4 (erst zurückspiegeln, dann Go
-   abwarten). Im Zweifel: lieber einmal zu viel fragen als eigenmächtig
-   etwas gestalterisch verändern.
-5. Der Abschnitt "Session-Fortschritt" weiter unten ist reines Protokoll
-   (Status-Snapshot für Kontext-Kontinuität zwischen Sessions) – KEINE
-   Freigabe-Instanz und KEIN Grund, eine bereits im Chat getroffene
-   Entscheidung erneut mit Pro/Contra zu hinterfragen. Ein im Chat
-   ausdrücklich erteiltes Go ist bindend, auch wenn ein Punkt dort zuvor als
-   "fertig" markiert war. Nach jeder Umsetzung wird der Status-Abschnitt
-   einfach auf den neuen, aktuellen Stand aktualisiert statt Altes stehen
-   zu lassen.
+   Vorher unbedingt das `<meta name="robots" content="noindex, nofollow">`
+   in index.html (Kopfbereich) wieder entfernen – wurde am 14.07.2026 als
+   Sicherheitsnetz eingebaut, damit Suchmaschinen die Seite vor dem echten
+   Launch nicht indexieren. Zusätzlich als letzten Schritt vor Launch: jedes
+   Verantwortungs-Verb in Berufserfahrung/Über mich/Skills (verantworte,
+   leite, betreibe, vertrete etc.) einzeln gegen die Realität prüfen – nach
+   dem Vorbild der Korrektur vom 14.07.2026 ("verantworte die
+   Systemlandschaft" → "Teil des Teams, hauptverantwortlich für zwei Tools").
 
 ## Board of Directors (auf Anfrage für Strategie-/Domain-/Karriere-Entscheidungen)
 
-Auf Wunsch von Marco: acht Perspektiven zur Gegenprobe bei Entscheidungen, die
+Auf Wunsch von Marco: zehn Perspektiven zur Gegenprobe bei Entscheidungen, die
 über reines Design/Content hinausgehen (Domain-Wahl, Deployment-Timing,
 Karriere-Priorisierung, grundlegende Strategiefragen). Kein Ersatz für Marcos
 eigene Entscheidung, sondern Denkwerkzeug – auf Zuruf einsetzbar ("frag mein
-Board of Directors"), nicht automatisch bei jeder Frage.
+Board of Directors"), nicht automatisch bei jeder Frage. Für reine
+Design-Entscheidungen gilt stattdessen automatisch das engere, immer aktive
+Testfragen-Quartett unter "Design-Qualität & Motion-Prinzipien"
+(Rams/Jobs/Tufte/Norman) – dieses Board hier ist die größere Erweiterung für
+Strategie-/Domain-/Karrierefragen.
 
 **Tech &amp; Business:**
 - Ben Horowitz: pragmatisch, operativ – trennt "shippen" von "vermarkten",
@@ -138,8 +154,16 @@ Board of Directors"), nicht automatisch bei jeder Frage.
   (z. B. TLD-Wahl) und technische Substanz.
 - Elon Musk: drängt auf schnelles, iteratives Ausliefern statt Perfektionismus,
   hinterfragt unnötige Zwischenschritte.
+- Dario Amodei: Sicherheit/Sorgfalt vor Tempo, Substanz statt Hype –
+  hinterfragt, ob eine Aussage/Formulierung wirklich präzise und ehrlich ist
+  statt nur beeindruckend zu klingen, denkt in langfristigen Konsequenzen
+  dessen, was heute veröffentlicht wird.
 - Marken-/Werbeprofi: Konsistenz- und Außenwirkungs-Check, liefert oft den
   konkreten Kompromiss/nächsten Schritt.
+- Pip Klöckner (Doppelgänger Tech Talk): pointiert-zynischer Blick auf Zahlen
+  und Geschäftsmodell statt auf Hype, deutscher/europäischer Marktblick statt
+  US-Silicon-Valley-Brille, fragt unbequem nach dem tatsächlichen Nutzen
+  einer Maßnahme statt nach der schönen Story dahinter.
 
 **Grundlegende Fragen &amp; Strategie:**
 - Ray Dalio: systematisches Entscheiden nach Prinzipien statt Bauchgefühl –
@@ -159,84 +183,30 @@ Board of Directors"), nicht automatisch bei jeder Frage.
   durch Vorbereitung entschieden, unnötige Konfrontation vermeiden, eigene
   Position stärken statt frontal anzugreifen.
 
-## Session-Fortschritt (Stand: 13.07.2026)
+## Session-Fortschritt (Kurzstatus, Stand: 14.07.2026)
 
-Kontext für die nächste Session (Cowork-Chat oder lokale Claude Code-Session
-in VS Code – beide arbeiten am selben Ordner): Arbeitsweise ist etabliert,
-dass Konzeption/Planung im Cowork-Chat läuft und von dort exportierbare,
-copy-paste-fertige Prompts für die lokale Claude Code-Session (VS Code,
-Terminal/Browser-Zugriff) erzeugt werden. Cowork selbst nimmt i.d.R. keine
-direkten Datei-Edits an index.html/style.css/script.js vor.
+Ausführlicher Verlauf, Debugging-Historie und verwendete Quelldokumente:
+siehe `SESSION-LOG.md` im selben Ordner. Hier nur der aktuelle Kurzstatus,
+der laut Arbeitsweise-Regel Punkt 5 nach jeder Umsetzung aktualisiert wird.
 
 **Fertig / bestätigt funktionierend:**
-- CLAUDE.md-Struktur (dieses Dokument) inkl. Datenschutz-Regel, Design-
-  Qualität/Motion-Prinzipien, Performance-Regeln.
-- Header/Hero: Buchstaben-Wordmark "Marco Becker" mit Scroll-Collapse (nur
-  M/B bleiben sichtbar), Hell/Dunkel-Toggle mit Anti-FOUC-Script, mehrere
-  Kontrast-Bugs in beiden Themes gefixt (--hero-node-bg, --hero-line-color,
-  --border).
-- Projekte-Bereich: RMVgo-Kachel-Netzwerk (echte App-Screenshots, Adresse
-  aus Datenschutzgründen ersetzt durch neutrale Orte), Chatbot-Architektur-
-  Flow (horizontal, barrierefrei nach aria-hidden-Fix, mit Quellenangabe
-  zur zitierten Publikation).
-- Hero-Netzwerk ("Knowledge Graph" im Hintergrund): 4 Hub-Badges (simultan)
-  + 10 Subtopic-Badges (simultan danach), Linien zeichnen sich erst NACH
-  ihrem Zielknoten von Hub zu Subtopic ein (getTotalLength()-basiertes
-  stroke-dasharray/-dashoffset in JS; die zwischenzeitlich getestete SVG
-  pathLength-Technik wurde wieder verworfen, da pathLength auf <line>-
-  Elementen browserübergreifend unzuverlässig unterstützt wird und
-  gestrichelte statt durchgehende Linien verursachte), jeder Knoten hat eine eigene Schwebe-
-  Logik (x/y/xy/vibrate-Profile) inkl. mitgeführter Linien-Endpunkte,
-  radiales Cluster-Layout (jeder Hub + seine Subtopics eng gruppiert,
-  deutliche Lücke zwischen den vier Gruppen). Bug behoben: "Stakeholder-
-  Management" hängt jetzt korrekt an "Product Ownership" (H3) statt an
-  "Change & AI-Adoption". prefers-reduced-motion geprüft (Chrome-Flag
-  --force-prefers-reduced-motion): sofortiger statischer Endzustand.
-  Zweiter, hartnäckigerer Linien-Bug gefunden und behoben (per Live-Debugging
-  über Claude-in-Chrome direkt im Browser, nicht nur über Screenshots):
-  stroke-dasharray wurde nur einmal beim Laden auf die damalige Linienlänge
-  gesetzt, aber die Endpunkte bewegen sich durch die Schwebe-Logik laufend
-  mit – dadurch driftete die echte Länge vom fixen Dasharray-Wert auseinander
-  und erzeugte ein sich wiederholendes Strich-Lücke-Muster (v. a. bei Linien
-  an stark bewegten Knoten wie H3/H4). Fix: dasharray wird in der tick()-
-  Schleife bei jeder Positions-Aktualisierung neu aus der aktuellen
-  getTotalLength() berechnet.
+- CLAUDE.md-Grundstruktur, Datenschutz-Regel, Design-Qualität/Motion-
+  Prinzipien, Performance-Regeln.
+- Header/Hero (Wordmark, Theme-Toggle), Projekte-Bereich Basis (RMVgo-
+  Netzwerk, Chatbot-Flow).
+- Hero-Netzwerk: 4 Hubs + 15 Satelliten, Linien zeichnen synchron mit
+  Knoten-Erscheinen, individuelle Schwebe-Profile, radiales Cluster-Layout –
+  inhaltlich final eingefroren (siehe Nächste Schritte Punkt 4).
+- Berufserfahrungs-/About-Texte präzisiert (Systemlandschaft-Verantwortung,
+  KI-Roundtable-Zuordnung).
+- Domain `marcobecker.org` gekauft. GitHub-Repo erstellt (privat),
+  `.gitignore` greift korrekt (verifiziert: keine sensiblen Dateien
+  getrackt). `noindex`-Meta-Tag als Pre-Launch-Sicherheitsnetz eingebaut.
+- Board of Directors auf neun Perspektiven erweitert, CLAUDE.md strukturell
+  überarbeitet (Details: SESSION-LOG.md, Stand 14.07.).
 
-**Offen (siehe Task-Tracker #3, #5, #6, #7):**
-- Projekte-Showcase (3-Layer: Kamera-Float + Parallax + scroll-gekoppeltes
-  Wachsen/Schrumpfen) insgesamt noch NICHT als fertig bestätigt: Vorwärts-
-  Scroll (Box wächst beim Runterscrollen) funktioniert, Rückwärts-Scroll
-  (Box soll beim Hochscrollen wieder schrumpfen) vermutlich nicht – noch
-  nicht diagnostiziert.
-- RMVgo/Chatbot-Feinschliff: 📱-Emoji als Hub-Icon wirkt "billig" und soll
-  ersetzt werden, Kachel-Schwebeanimation ist zu gleichförmig, Bildunterschriften
-  brauchen besseres Layout/Typografie, Anthropic-artige "Tiles fahren
-  prominent heraus"-Qualität fehlt noch.
-- Setup & Publishing (GitHub Pages, eigene Domain) – noch nicht begonnen.
-
-**Quelldokumente/Assets, die in dieser Session verwendet wurden:**
-- `Becker_CV_26.pdf` – Ausgangsdaten für alle CV-Inhalte (Rolle bei der
-  DZ BANK, Projekte, Skills). Wird laut .gitignore-Regel nicht mit hochgeladen.
-- `Gen_AI/id-5147.pdf` – öffentliches, CC-lizenziertes Fachpaper (Breiter,
-  Lohmann, Stahl, Zilmans, Reischl-Lenz, Gimpel: "Generative KI in der
-  Finanzbranche... am Beispiel der DZ BANK AG", HMD Praxis der
-  Wirtschaftsinformatik 2025, DOI 10.1365/s40702-025-01166-8) – Quelle für
-  die Chatbot-Architektur-Grafik; Marco ist NICHT Autor, wird nur als
-  Hintergrundquelle zitiert (Link im Chatbot-Flow eingebaut).
-- `rmvgo/` – App-Screenshots (rmvgo_startscreen.png, rmvgo_abfahrten_ffm.png,
-  rmvgo_abfahrten_ffm_2.png, rmvgo_ticket.png, rmvgo_verbindung.png,
-  rmvgo_bikesharing.png, appstore_rmvgo.png). Ursprünglich enthielt ein
-  Screenshot die private Adresse "Schneidmühlweg 74" – wurde erkannt und
-  durch neutrale Screenshots (Start: Frankfurt/Aschaffenburg Hauptbahnhof)
-  ersetzt.
-- `eu_dashboard/` – 7 Screens (screen-01-overview bis screen-07-methodik)
-  für den Guided Walkthrough des European Dashboard (Masterthesis), plus
-  komprimiertes wordcloud.mp4 (<3MB) als Lightbox-Finale.
-- Diverse Anthropic.com-Referenz-Screenshots (Hero-Netzwerk-Optik,
-  Scroll-Showcase-Kino-Modus) – dienten nur als visuelle Referenz, keine
-  Assets, keine Übernahme von Fremdinhalten.
-- Extern generierte Motion-Spezifikationen (aus einem anderen KI-Tool,
-  teils React/Next.js/Tailwind/Framer-Motion-basiert) wurden jedes Mal in
-  Vanilla HTML/CSS/JS übersetzt, um CLAUDE.md's No-Framework-Regel zu
-  wahren – dieses Muster hat sich wiederholt und sollte bei zukünftigen
-  externen Prompts weiterhin beachtet werden.
+**Offen (siehe Task-Tracker #6, #7, #10, #11):**
+- Projekte-Showcase Reverse-Scroll-Bug, RMVgo/Chatbot-Kachel-Feinschliff –
+  beide zeitlich begrenzt (siehe Nächste Schritte Punkt 2).
+- Repo öffentlich schalten + GitHub Pages aktivieren + Domain per DNS
+  verbinden (Nächste Schritte Punkt 3, in Bearbeitung).
